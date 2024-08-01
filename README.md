@@ -5,6 +5,7 @@
 ## Query
 
 - [https://xenea-indexer-template-railway-production.up.railway.app/playground](https://xenea-indexer-template-railway-production.up.railway.app/playground)
+- [https://xenea-indexer-template-railway-production.up.railway.app/graphql](https://xenea-indexer-template-railway-production.up.railway.app/graphql)
 
 ## Tech
 

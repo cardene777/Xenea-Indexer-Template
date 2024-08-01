@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 
 COPY ${PROJECT_PATH} /usr/src/app/rindexer-app
 
-ARG PORT="3000"
+ARG PORT="3001"
 ENV PORT=${PORT}
 
 EXPOSE ${PORT}
