@@ -3,7 +3,7 @@ description: Xenea Indexer
 repository: src
 project_type: no-code
 networks:
-- name: Xenea Kura Testnet
+- name: kura
   chain_id: 5555
   rpc: https://rpc-kura.cross.technology
 storage:
@@ -13,13 +13,21 @@ storage:
     enabled: true
     path: ./generated_csv
 contracts:
-- name: RocketPoolETH
+- name: CDH
   details:
-  - network: ethereum
-    address: 0xae78736cd615f374d3085123a210448e74fc6393
-    start_block: '18900000'
-    end_block: '19000000'
-  abi: ./abis/RocketTokenRETH.abi.json
+  - network: kura
+    address: 0x3784213D4D5057AF218dA4ee8149B5d35fca8e06
+    start_block: '0'
+    # end_block: '19000000'
+  abi: ./abis/CDH.json
   include_events:
   - Transfer
   - Approval
+# - name: ERC6551Accout
+#   details:
+#   - network: kura
+#     address: 0xf0048bBa2bE797458c4D68E081d928F009670655
+#   abi: ./abis/ERC6551Account.json
+#   include_events:
+#   - Transfer
+#   - Approval
