@@ -23,6 +23,19 @@ contracts:
     include_events:
       - Transfer
       - Approval
+  # - name: NFTMarketplace
+  #   details:
+  #     - network: kura
+  #       address: 0x3c955E552Fd383435765313330301c23f014e0a6
+  #       start_block: "0"
+  #      # end_block: '19000000'
+  #   abi: ./abis/NFTMarketplace.json
+  #  include_events:
+  #    - Listed
+  #    - Canceled
+  #    - Sold
+  #    - Received
+  #    - FallbackReceived
   # - name: ERC6551Accout
   #   details:
   #   - network: kura
