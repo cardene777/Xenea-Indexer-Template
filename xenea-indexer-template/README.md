@@ -29,10 +29,14 @@
   ```
 
 3. Create a service and link it to the project
-  
+
   ```bash
   railway up --detach
-  railway link --name rindexer-example --enviroment production
+  railway link
+
+  > Select a project <rindexer-example>
+  > Select an environment <production>
+  > Select a service <rindexer-example>
   ```
 
 4. Create a Postgres database
