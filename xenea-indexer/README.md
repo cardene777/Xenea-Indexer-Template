@@ -29,11 +29,3 @@ rindexer start all
   ```bash
   railway up
   ```
-
-
-
-```
-DATABASE_URL
-postgresql://postgres:cCzfKpsbzVWnxaCgolBJWPXARdRdyQxN@postgres.railway.internal:5432/railway?sslmode=disable
-PORT
-3001
