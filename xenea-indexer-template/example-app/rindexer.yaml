@@ -21,7 +21,6 @@ contracts:
   abi: ./abis/CDH.json
   include_events:
   - Transfer
-  - Approval
 - name: SampleERC721
   details:
   - network: kura
