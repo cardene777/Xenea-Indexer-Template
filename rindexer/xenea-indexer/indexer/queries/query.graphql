@@ -1,0 +1,22 @@
+query queryQuery($nodeId: ID!) {
+    query(nodeId: $nodeId) {
+        query
+        nodeId
+        node
+        allApprovals
+        allCdhTransfers
+        allSampleErc721Transfers
+        allTransferSingles
+        allSampleErc20Transfers
+        approvalByRindexerId
+        cdhTransferByRindexerId
+        sampleErc721TransferByRindexerId
+        transferSingleByRindexerId
+        sampleErc20TransferByRindexerId
+        approval
+        cdhTransfer
+        sampleErc721Transfer
+        transferSingle
+        sampleErc20Transfer
+    }
+}

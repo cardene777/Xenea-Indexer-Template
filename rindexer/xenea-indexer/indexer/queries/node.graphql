@@ -1,0 +1,5 @@
+query nodeQuery($nodeId: ID!) {
+    node(nodeId: $nodeId) {
+        nodeId
+    }
+}

@@ -1,0 +1,34 @@
+query allCdhTransfersQuery(
+    $after: Cursor,
+    $first: Int = 50,
+    $condition: CdhTransferCondition = {},
+    $orderBy: [CdhTransfersOrderBy!] = BLOCK_NUMBER_DESC
+) {
+    allCdhTransfers(
+        first: $first,
+        after: $after,
+        condition: $condition,
+        orderBy: $orderBy
+    ) {
+        nodes {
+            nodeId
+            rindexerId
+            contractAddress
+            from
+            to
+            tokenId
+            txHash
+            blockNumber
+            blockHash
+            network
+            txIndex
+            logIndex
+        }
+        pageInfo {
+            endCursor
+            hasNextPage
+            hasPreviousPage
+            startCursor
+        }
+    }
+}

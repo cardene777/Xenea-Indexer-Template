@@ -1,0 +1,16 @@
+query cdhTransferQuery($nodeId: ID!) {
+    cdhTransfer(nodeId: $nodeId) {
+        nodeId
+        rindexerId
+        contractAddress
+        from
+        to
+        tokenId
+        txHash
+        blockNumber
+        blockHash
+        network
+        txIndex
+        logIndex
+    }
+}

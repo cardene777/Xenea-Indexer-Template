@@ -1,0 +1,46 @@
+17 August - 12:18:42.132017  INFO Starting rindexer no code
+17 August - 12:18:42.133389  INFO Setting up postgres
+17 August - 12:18:42.143474  INFO Creating tables for indexer
+17 August - 12:18:42.144311  INFO Creating schema if not exists: indexer_cdh
+17 August - 12:18:42.144872  INFO Creating table if not exists: indexer_cdh.transfer
+17 August - 12:18:42.145421  INFO Creating schema if not exists: indexer_sample_erc_721
+17 August - 12:18:42.145622  INFO Creating table if not exists: indexer_sample_erc_721.transfer
+17 August - 12:18:42.145693  INFO Creating schema if not exists: indexer_sample_erc_1155
+17 August - 12:18:42.145882  INFO Creating table if not exists: indexer_sample_erc_1155.transfer_single
+17 August - 12:18:42.145959  INFO Creating schema if not exists: indexer_sample_erc_20
+17 August - 12:18:42.146205  INFO Creating table if not exists: indexer_sample_erc_20.transfer
+17 August - 12:18:42.178836  INFO Created tables for indexer
+17 August - 12:18:42.186566  INFO Networks enabled: kura
+17 August - 12:18:42.189082  INFO Events registered to index:CDH::Transfer, SampleERC721::Transfer, SampleERC1155::TransferSingle, SampleERC20::Transfer
+17 August - 12:18:42.189721  INFO Temp dropping constraints relationships from the database for historic indexing for speed reasons
+17 August - 12:18:42.189743  INFO Starting GraphQL server
+17 August - 12:18:42.207830  INFO Temp dropping indexes from the database for historic indexing for speed reasons
+17 August - 12:18:42.862734  INFO CDH::Transfer Found last synced block number - 638624 rindexer will start up from this point
+17 August - 12:18:42.938001  INFO SampleERC721::Transfer Found last synced block number - 638638 rindexer will start up from this point
+17 August - 12:18:43.036831  INFO CDH::Transfer - No events found between blocks 638624 - 642165
+17 August - 12:18:43.037016  INFO CDH::Transfer - COMPLETED - Finished indexing historic events
+17 August - 12:18:43.110014  INFO SampleERC1155::TransferSingle Found last synced block number - 639104 rindexer will start up from this point
+17 August - 12:18:43.184208  INFO SampleERC20::Transfer Found last synced block number - 639104 rindexer will start up from this point
+17 August - 12:18:43.191930  INFO SampleERC721::Transfer - No events found between blocks 638638 - 642165
+17 August - 12:18:43.192011  INFO SampleERC721::Transfer - COMPLETED - Finished indexing historic events
+17 August - 12:18:43.262894  INFO SampleERC1155::TransferSingle - No events found between blocks 639104 - 642165
+17 August - 12:18:43.262980  INFO SampleERC1155::TransferSingle - COMPLETED - Finished indexing historic events
+17 August - 12:18:43.289914  INFO SampleERC20::Transfer - No events found between blocks 639104 - 642165
+17 August - 12:18:43.289953  INFO SampleERC20::Transfer - COMPLETED - Finished indexing historic events
+17 August - 12:18:43.325892  INFO CDH::Transfer - LIVE - New block seen 642165 - Last seen block 0
+17 August - 12:18:43.393691  INFO SampleERC721::Transfer - LIVE - New block seen 642165 - Last seen block 0
+17 August - 12:18:43.425079  INFO CDH::Transfer - LIVE - No events found between blocks 638624 - 642165
+17 August - 12:18:43.465107  INFO SampleERC1155::TransferSingle - LIVE - New block seen 642165 - Last seen block 0
+17 August - 12:18:43.492170  INFO SampleERC20::Transfer - LIVE - New block seen 642165 - Last seen block 0
+17 August - 12:18:43.511825  INFO SampleERC721::Transfer - LIVE - No events found between blocks 638638 - 642165
+17 August - 12:18:43.562159  INFO SampleERC1155::TransferSingle - LIVE - No events found between blocks 639104 - 642165
+17 August - 12:18:43.596366  INFO SampleERC20::Transfer - LIVE - No events found between blocks 639104 - 642165
+17 August - 12:18:48.059291  INFO 🦀 GraphQL API ready at http://localhost:3001/graphql Playground - http://localhost:3001/playground 🦀
+17 August - 12:18:51.246195  INFO SampleERC721::Transfer - LIVE - New block seen 642166 - Last seen block 642165
+17 August - 12:18:51.247070  INFO SampleERC721::Transfer - LIVE - Did not need to hit RPC as no events in 642166 block - LogsBloom for block checked
+17 August - 12:18:51.247109  INFO SampleERC1155::TransferSingle - LIVE - New block seen 642166 - Last seen block 642165
+17 August - 12:18:51.247121  INFO SampleERC1155::TransferSingle - LIVE - Did not need to hit RPC as no events in 642166 block - LogsBloom for block checked
+17 August - 12:18:51.247156  INFO SampleERC20::Transfer - LIVE - New block seen 642166 - Last seen block 642165
+17 August - 12:18:51.247170  INFO SampleERC20::Transfer - LIVE - Did not need to hit RPC as no events in 642166 block - LogsBloom for block checked
+17 August - 12:18:51.247179  INFO CDH::Transfer - LIVE - New block seen 642166 - Last seen block 642165
+17 August - 12:18:51.247189  INFO CDH::Transfer - LIVE - Did not need to hit RPC as no events in 642166 block - LogsBloom for block checked

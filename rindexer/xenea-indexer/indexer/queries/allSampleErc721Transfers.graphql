@@ -1,0 +1,34 @@
+query allSampleErc721TransfersQuery(
+    $after: Cursor,
+    $first: Int = 50,
+    $condition: SampleErc721TransferCondition = {},
+    $orderBy: [SampleErc721TransfersOrderBy!] = BLOCK_NUMBER_DESC
+) {
+    allSampleErc721Transfers(
+        first: $first,
+        after: $after,
+        condition: $condition,
+        orderBy: $orderBy
+    ) {
+        nodes {
+            nodeId
+            rindexerId
+            contractAddress
+            from
+            to
+            tokenId
+            txHash
+            blockNumber
+            blockHash
+            network
+            txIndex
+            logIndex
+        }
+        pageInfo {
+            endCursor
+            hasNextPage
+            hasPreviousPage
+            startCursor
+        }
+    }
+}

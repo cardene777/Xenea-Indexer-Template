@@ -1,0 +1,16 @@
+query approvalQuery($nodeId: ID!) {
+    approval(nodeId: $nodeId) {
+        nodeId
+        rindexerId
+        contractAddress
+        owner
+        approved
+        tokenId
+        txHash
+        blockNumber
+        blockHash
+        network
+        txIndex
+        logIndex
+    }
+}

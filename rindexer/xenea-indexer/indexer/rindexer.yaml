@@ -51,3 +51,5 @@ contracts:
   abi: ./abis/SampleERC20.json
   include_events:
   - Transfer
+graphql:
+  port: 3001

@@ -1,0 +1,36 @@
+query allTransferSinglesQuery(
+    $after: Cursor,
+    $first: Int = 50,
+    $condition: TransferSingleCondition = {},
+    $orderBy: [TransferSinglesOrderBy!] = BLOCK_NUMBER_DESC
+) {
+    allTransferSingles(
+        first: $first,
+        after: $after,
+        condition: $condition,
+        orderBy: $orderBy
+    ) {
+        nodes {
+            nodeId
+            rindexerId
+            contractAddress
+            operator
+            from
+            to
+            id
+            value
+            txHash
+            blockNumber
+            blockHash
+            network
+            txIndex
+            logIndex
+        }
+        pageInfo {
+            endCursor
+            hasNextPage
+            hasPreviousPage
+            startCursor
+        }
+    }
+}

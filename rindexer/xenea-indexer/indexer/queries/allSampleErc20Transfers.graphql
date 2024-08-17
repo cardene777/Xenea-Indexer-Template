@@ -1,0 +1,34 @@
+query allSampleErc20TransfersQuery(
+    $after: Cursor,
+    $first: Int = 50,
+    $condition: SampleErc20TransferCondition = {},
+    $orderBy: [SampleErc20TransfersOrderBy!] = BLOCK_NUMBER_DESC
+) {
+    allSampleErc20Transfers(
+        first: $first,
+        after: $after,
+        condition: $condition,
+        orderBy: $orderBy
+    ) {
+        nodes {
+            nodeId
+            rindexerId
+            contractAddress
+            from
+            to
+            value
+            txHash
+            blockNumber
+            blockHash
+            network
+            txIndex
+            logIndex
+        }
+        pageInfo {
+            endCursor
+            hasNextPage
+            hasPreviousPage
+            startCursor
+        }
+    }
+}

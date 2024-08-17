@@ -1,0 +1,16 @@
+query sampleErc20TransferQuery($nodeId: ID!) {
+    sampleErc20Transfer(nodeId: $nodeId) {
+        nodeId
+        rindexerId
+        contractAddress
+        from
+        to
+        value
+        txHash
+        blockNumber
+        blockHash
+        network
+        txIndex
+        logIndex
+    }
+}

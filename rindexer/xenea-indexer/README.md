@@ -10,6 +10,12 @@ cd xenea-indexer/indexer
 rindexer start all
 ```
 
+## Generate Graphql Codegen
+
+```bash
+rindexer codegen graphql --endpoint=http://localhost:3001/graphql
+```
+
 ## Redeploy
 
 ```bash

@@ -1,0 +1,34 @@
+query allApprovalsQuery(
+    $after: Cursor,
+    $first: Int = 50,
+    $condition: ApprovalCondition = {},
+    $orderBy: [ApprovalsOrderBy!] = BLOCK_NUMBER_DESC
+) {
+    allApprovals(
+        first: $first,
+        after: $after,
+        condition: $condition,
+        orderBy: $orderBy
+    ) {
+        nodes {
+            nodeId
+            rindexerId
+            contractAddress
+            owner
+            approved
+            tokenId
+            txHash
+            blockNumber
+            blockHash
+            network
+            txIndex
+            logIndex
+        }
+        pageInfo {
+            endCursor
+            hasNextPage
+            hasPreviousPage
+            startCursor
+        }
+    }
+}

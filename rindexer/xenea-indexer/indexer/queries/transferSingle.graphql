@@ -1,0 +1,18 @@
+query transferSingleQuery($nodeId: ID!) {
+    transferSingle(nodeId: $nodeId) {
+        nodeId
+        rindexerId
+        contractAddress
+        operator
+        from
+        to
+        id
+        value
+        txHash
+        blockNumber
+        blockHash
+        network
+        txIndex
+        logIndex
+    }
+}
