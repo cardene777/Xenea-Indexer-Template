@@ -1,0 +1,108 @@
+export const ERC6551Account = [
+  {
+    stateMutability: "payable",
+    type: "function",
+    inputs: [
+      { name: "to", internalType: "address", type: "address" },
+      { name: "value", internalType: "uint256", type: "uint256" },
+      { name: "data", internalType: "bytes", type: "bytes" },
+      { name: "operation", internalType: "uint8", type: "uint8" },
+    ],
+    name: "execute",
+    outputs: [{ name: "result", internalType: "bytes", type: "bytes" }],
+  },
+  {
+    stateMutability: "view",
+    type: "function",
+    inputs: [
+      { name: "hash", internalType: "bytes32", type: "bytes32" },
+      { name: "signature", internalType: "bytes", type: "bytes" },
+    ],
+    name: "isValidSignature",
+    outputs: [{ name: "magicValue", internalType: "bytes4", type: "bytes4" }],
+  },
+  {
+    stateMutability: "view",
+    type: "function",
+    inputs: [
+      { name: "signer", internalType: "address", type: "address" },
+      { name: "", internalType: "bytes", type: "bytes" },
+    ],
+    name: "isValidSigner",
+    outputs: [{ name: "", internalType: "bytes4", type: "bytes4" }],
+  },
+  {
+    stateMutability: "pure",
+    type: "function",
+    inputs: [
+      { name: "operator", internalType: "address", type: "address" },
+      { name: "from", internalType: "address", type: "address" },
+      { name: "ids", internalType: "uint256[]", type: "uint256[]" },
+      { name: "values", internalType: "uint256[]", type: "uint256[]" },
+      { name: "data", internalType: "bytes", type: "bytes" },
+    ],
+    name: "onERC1155BatchReceived",
+    outputs: [{ name: "", internalType: "bytes4", type: "bytes4" }],
+  },
+  {
+    stateMutability: "pure",
+    type: "function",
+    inputs: [
+      { name: "operator", internalType: "address", type: "address" },
+      { name: "from", internalType: "address", type: "address" },
+      { name: "id", internalType: "uint256", type: "uint256" },
+      { name: "value", internalType: "uint256", type: "uint256" },
+      { name: "data", internalType: "bytes", type: "bytes" },
+    ],
+    name: "onERC1155Received",
+    outputs: [{ name: "", internalType: "bytes4", type: "bytes4" }],
+  },
+  {
+    stateMutability: "pure",
+    type: "function",
+    inputs: [
+      { name: "operator", internalType: "address", type: "address" },
+      { name: "from", internalType: "address", type: "address" },
+      { name: "tokenId", internalType: "uint256", type: "uint256" },
+      { name: "data", internalType: "bytes", type: "bytes" },
+    ],
+    name: "onERC721Received",
+    outputs: [{ name: "", internalType: "bytes4", type: "bytes4" }],
+  },
+  {
+    stateMutability: "view",
+    type: "function",
+    inputs: [],
+    name: "owner",
+    outputs: [{ name: "", internalType: "address", type: "address" }],
+  },
+  {
+    stateMutability: "view",
+    type: "function",
+    inputs: [],
+    name: "state",
+    outputs: [{ name: "", internalType: "uint256", type: "uint256" }],
+  },
+  {
+    stateMutability: "view",
+    type: "function",
+    inputs: [{ name: "interfaceId", internalType: "bytes4", type: "bytes4" }],
+    name: "supportsInterface",
+    outputs: [{ name: "", internalType: "bool", type: "bool" }],
+  },
+  {
+    stateMutability: "view",
+    type: "function",
+    inputs: [],
+    name: "token",
+    outputs: [
+      { name: "", internalType: "uint256", type: "uint256" },
+      { name: "", internalType: "address", type: "address" },
+      { name: "", internalType: "uint256", type: "uint256" },
+    ],
+  },
+  {
+    stateMutability: "payable",
+    type: "receive",
+  },
+] as const;
