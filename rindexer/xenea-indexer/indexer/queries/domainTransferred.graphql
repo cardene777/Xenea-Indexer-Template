@@ -1,0 +1,15 @@
+query domainTransferredQuery($nodeId: ID!) {
+    domainTransferred(nodeId: $nodeId) {
+        nodeId
+        rindexerId
+        contractAddress
+        tokenId
+        newOwner
+        txHash
+        blockNumber
+        blockHash
+        network
+        txIndex
+        logIndex
+    }
+}

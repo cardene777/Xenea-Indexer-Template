@@ -39,3 +39,31 @@ cd xenea-indexer
   ```bash
   railway up
   ```
+
+
+## Playground
+
+- [https://xenea-indexer-production.up.railway.app/playground](https://xenea-indexer-production.up.railway.app/playground)
+
+## GraphQL
+
+- [https://xenea-indexer-production.up.railway.app/graphql](https://xenea-indexer-production.up.railway.app/graphql)
+
+## Queries
+
+### SampleErc721Transfers
+
+```graphql
+query AllSampleErc721Transfers($first: Int) {
+  allSampleErc721Transfers(first: $first) {
+    nodes {
+      blockHash
+      blockNumber
+      contractAddress
+      from
+      to
+      tokenId
+    }
+  }
+}
+```

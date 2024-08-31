@@ -1,0 +1,33 @@
+query allListedsQuery(
+    $after: Cursor,
+    $first: Int = 50,
+    $condition: ListedCondition = {},
+    $orderBy: [ListedsOrderBy!] = BLOCK_NUMBER_DESC
+) {
+    allListeds(
+        first: $first,
+        after: $after,
+        condition: $condition,
+        orderBy: $orderBy
+    ) {
+        nodes {
+            nodeId
+            rindexerId
+            contractAddress
+            tokenId
+            seller
+            txHash
+            blockNumber
+            blockHash
+            network
+            txIndex
+            logIndex
+        }
+        pageInfo {
+            endCursor
+            hasNextPage
+            hasPreviousPage
+            startCursor
+        }
+    }
+}

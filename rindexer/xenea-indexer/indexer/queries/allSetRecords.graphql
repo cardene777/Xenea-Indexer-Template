@@ -1,0 +1,34 @@
+query allSetRecordsQuery(
+    $after: Cursor,
+    $first: Int = 50,
+    $condition: SetRecordCondition = {},
+    $orderBy: [SetRecordsOrderBy!] = BLOCK_NUMBER_DESC
+) {
+    allSetRecords(
+        first: $first,
+        after: $after,
+        condition: $condition,
+        orderBy: $orderBy
+    ) {
+        nodes {
+            nodeId
+            rindexerId
+            contractAddress
+            owner
+            name
+            record
+            txHash
+            blockNumber
+            blockHash
+            network
+            txIndex
+            logIndex
+        }
+        pageInfo {
+            endCursor
+            hasNextPage
+            hasPreviousPage
+            startCursor
+        }
+    }
+}

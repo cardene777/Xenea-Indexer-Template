@@ -1,0 +1,15 @@
+query canceledQuery($nodeId: ID!) {
+    canceled(nodeId: $nodeId) {
+        nodeId
+        rindexerId
+        contractAddress
+        tokenId
+        seller
+        txHash
+        blockNumber
+        blockHash
+        network
+        txIndex
+        logIndex
+    }
+}

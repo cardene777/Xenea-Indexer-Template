@@ -1,0 +1,33 @@
+query allCanceledsQuery(
+    $after: Cursor,
+    $first: Int = 50,
+    $condition: CanceledCondition = {},
+    $orderBy: [CanceledsOrderBy!] = BLOCK_NUMBER_DESC
+) {
+    allCanceleds(
+        first: $first,
+        after: $after,
+        condition: $condition,
+        orderBy: $orderBy
+    ) {
+        nodes {
+            nodeId
+            rindexerId
+            contractAddress
+            tokenId
+            seller
+            txHash
+            blockNumber
+            blockHash
+            network
+            txIndex
+            logIndex
+        }
+        pageInfo {
+            endCursor
+            hasNextPage
+            hasPreviousPage
+            startCursor
+        }
+    }
+}

@@ -1,0 +1,15 @@
+query nftMarketplaceReceivedQuery($nodeId: ID!) {
+    nftMarketplaceReceived(nodeId: $nodeId) {
+        nodeId
+        rindexerId
+        contractAddress
+        sender
+        amount
+        txHash
+        blockNumber
+        blockHash
+        network
+        txIndex
+        logIndex
+    }
+}

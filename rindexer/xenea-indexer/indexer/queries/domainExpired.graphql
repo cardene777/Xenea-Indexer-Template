@@ -1,0 +1,14 @@
+query domainExpiredQuery($nodeId: ID!) {
+    domainExpired(nodeId: $nodeId) {
+        nodeId
+        rindexerId
+        contractAddress
+        tokenId
+        txHash
+        blockNumber
+        blockHash
+        network
+        txIndex
+        logIndex
+    }
+}

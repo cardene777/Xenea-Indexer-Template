@@ -1,0 +1,16 @@
+query setRecordQuery($nodeId: ID!) {
+    setRecord(nodeId: $nodeId) {
+        nodeId
+        rindexerId
+        contractAddress
+        owner
+        name
+        record
+        txHash
+        blockNumber
+        blockHash
+        network
+        txIndex
+        logIndex
+    }
+}

@@ -1,0 +1,33 @@
+query allDomainTransferredsQuery(
+    $after: Cursor,
+    $first: Int = 50,
+    $condition: DomainTransferredCondition = {},
+    $orderBy: [DomainTransferredsOrderBy!] = BLOCK_NUMBER_DESC
+) {
+    allDomainTransferreds(
+        first: $first,
+        after: $after,
+        condition: $condition,
+        orderBy: $orderBy
+    ) {
+        nodes {
+            nodeId
+            rindexerId
+            contractAddress
+            tokenId
+            newOwner
+            txHash
+            blockNumber
+            blockHash
+            network
+            txIndex
+            logIndex
+        }
+        pageInfo {
+            endCursor
+            hasNextPage
+            hasPreviousPage
+            startCursor
+        }
+    }
+}

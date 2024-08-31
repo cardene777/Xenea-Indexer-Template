@@ -1,0 +1,15 @@
+query domainsFallbackReceivedQuery($nodeId: ID!) {
+    domainsFallbackReceived(nodeId: $nodeId) {
+        nodeId
+        rindexerId
+        contractAddress
+        sender
+        amount
+        txHash
+        blockNumber
+        blockHash
+        network
+        txIndex
+        logIndex
+    }
+}

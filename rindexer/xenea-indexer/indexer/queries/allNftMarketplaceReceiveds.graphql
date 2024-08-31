@@ -1,0 +1,33 @@
+query allNftMarketplaceReceivedsQuery(
+    $after: Cursor,
+    $first: Int = 50,
+    $condition: NftMarketplaceReceivedCondition = {},
+    $orderBy: [NftMarketplaceReceivedsOrderBy!] = BLOCK_NUMBER_DESC
+) {
+    allNftMarketplaceReceiveds(
+        first: $first,
+        after: $after,
+        condition: $condition,
+        orderBy: $orderBy
+    ) {
+        nodes {
+            nodeId
+            rindexerId
+            contractAddress
+            sender
+            amount
+            txHash
+            blockNumber
+            blockHash
+            network
+            txIndex
+            logIndex
+        }
+        pageInfo {
+            endCursor
+            hasNextPage
+            hasPreviousPage
+            startCursor
+        }
+    }
+}

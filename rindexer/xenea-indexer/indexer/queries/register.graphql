@@ -1,0 +1,15 @@
+query registerQuery($nodeId: ID!) {
+    register(nodeId: $nodeId) {
+        nodeId
+        rindexerId
+        contractAddress
+        owner
+        name
+        txHash
+        blockNumber
+        blockHash
+        network
+        txIndex
+        logIndex
+    }
+}

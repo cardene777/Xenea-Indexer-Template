@@ -1,0 +1,33 @@
+query allRegistersQuery(
+    $after: Cursor,
+    $first: Int = 50,
+    $condition: RegisterCondition = {},
+    $orderBy: [RegistersOrderBy!] = BLOCK_NUMBER_DESC
+) {
+    allRegisters(
+        first: $first,
+        after: $after,
+        condition: $condition,
+        orderBy: $orderBy
+    ) {
+        nodes {
+            nodeId
+            rindexerId
+            contractAddress
+            owner
+            name
+            txHash
+            blockNumber
+            blockHash
+            network
+            txIndex
+            logIndex
+        }
+        pageInfo {
+            endCursor
+            hasNextPage
+            hasPreviousPage
+            startCursor
+        }
+    }
+}

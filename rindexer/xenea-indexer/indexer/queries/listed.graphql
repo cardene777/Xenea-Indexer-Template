@@ -1,0 +1,15 @@
+query listedQuery($nodeId: ID!) {
+    listed(nodeId: $nodeId) {
+        nodeId
+        rindexerId
+        contractAddress
+        tokenId
+        seller
+        txHash
+        blockNumber
+        blockHash
+        network
+        txIndex
+        logIndex
+    }
+}

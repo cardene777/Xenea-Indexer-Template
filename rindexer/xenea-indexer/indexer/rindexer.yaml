@@ -51,5 +51,31 @@ contracts:
   abi: ./abis/SampleERC20.json
   include_events:
   - Transfer
+
+- name: NFTMarketplace
+  details:
+    - network: kura
+      address: 0x3c955E552Fd383435765313330301c23f014e0a6
+      start_block: "595149"
+  abi: ./abis/NFTMarketplace.json
+  include_events:
+    - Listed
+    - Canceled
+    - Sold
+    - Received
+    - FallbackReceived
+- name: Domains
+  details:
+  - network: kura
+    address: 0x9dbec436843B2f12BAf8A372CC210a0dA8c10281
+    start_block: "595150"
+  abi: ./abis/Domains.json
+  include_events:
+    - Register
+    - SetRecord
+    - DomainExpired
+    - DomainTransferred
+    - Received
+    - FallbackReceived
 graphql:
   port: 3001

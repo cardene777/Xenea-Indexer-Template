@@ -8,15 +8,48 @@ query queryQuery($nodeId: ID!) {
         allSampleErc721Transfers
         allTransferSingles
         allSampleErc20Transfers
+        allCanceleds
+        allNftMarketplaceFallbackReceiveds
+        allListeds
+        allNftMarketplaceReceiveds
+        allSolds
+        allDomainExpireds
+        allDomainTransferreds
+        allDomainsFallbackReceiveds
+        allDomainsReceiveds
+        allRegisters
+        allSetRecords
         approvalByRindexerId
         cdhTransferByRindexerId
         sampleErc721TransferByRindexerId
         transferSingleByRindexerId
         sampleErc20TransferByRindexerId
+        canceledByRindexerId
+        nftMarketplaceFallbackReceivedByRindexerId
+        listedByRindexerId
+        nftMarketplaceReceivedByRindexerId
+        soldByRindexerId
+        domainExpiredByRindexerId
+        domainTransferredByRindexerId
+        domainsFallbackReceivedByRindexerId
+        domainsReceivedByRindexerId
+        registerByRindexerId
+        setRecordByRindexerId
         approval
         cdhTransfer
         sampleErc721Transfer
         transferSingle
         sampleErc20Transfer
+        canceled
+        nftMarketplaceFallbackReceived
+        listed
+        nftMarketplaceReceived
+        sold
+        domainExpired
+        domainTransferred
+        domainsFallbackReceived
+        domainsReceived
+        register
+        setRecord
     }
 }
