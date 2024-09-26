@@ -25,9 +25,9 @@ contracts:
   details:
   - network: kura
     address:
-      - "0x2b8e8f6dfCCd54254A09f50f2CE1341D28EC5564"
-      - "0x27b9c1425135730369651b55aEA62710717825e6"
-      - "0xe6DFdAA1509B8d7efcB20c60296dF3A1b212a978"
+      - "0x349BB11610E9dC57D0c34B95b934C49e6ecB5437"
+      - "0x9002217c7FD66593eD0C1Ad1CB12321B90069BEe"
+      - "0x2665D69d173e584735E5f9D9707E892ec6EAb891"
     start_block: '638501'
   abi: ./abis/SampleERC721.json
   include_events:
@@ -35,7 +35,7 @@ contracts:
 - name: SampleERC1155
   details:
   - network: kura
-    address: 0xEc756B6ef29f5cba4871a11b6f745d3555BBE655
+    address: 0xAa6E864fEc526625962C943ABb054a80e76a50BB
     start_block: '638504'
   abi: ./abis/SampleERC1155.json
   include_events:
@@ -44,9 +44,9 @@ contracts:
   details:
   - network: kura
     address:
-      - "0x376593252e3bf9B00042e7b802DE6684EBCcB53B"
-      - "0x7979584E09EFfccA84b6665E2834C703fFCC949F"
-      - "0x11A90C2d3e2FA036ff6C1A8DC960f4512eEE772d"
+      - "0x5Ff7FB7348e984638722799eD7BBeA7266D50d08"
+      - "0xe6c21783d824E79e0A7460eeb68029BB0cA1c342"
+      - "0x253EFe6033Dc94605fE93fDd7A46256507304fF4"
     start_block: '638505'
   abi: ./abis/SampleERC20.json
   include_events:
